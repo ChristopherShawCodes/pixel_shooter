@@ -39,5 +39,7 @@ class Zombie {
       difference.limit(this.speed);
       this.pos.add(difference);
     }
-    
+    ateYou() {
+      return dist(this.pos.x, this.pos.y, player.pos.x, player.pos.y) < 20;
+    }
   }

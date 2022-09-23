@@ -27,6 +27,11 @@ function draw() {
     zombies[i].draw();
     zombies[i].update();
 
+    if(zombies[i].ateYou()){
+      restart();
+      break;
+    }
+
     
     if (player.shot(zombies[i])) {
       zombies.splice(i, 1);
@@ -48,9 +53,17 @@ function draw() {
   textAlign(CENTER);
   textSize(40);
   text(score, width/2, 100);
-  
+  fill(255,255,0);
 }
 
 function mouseClicked() {
   player.shoot();
+}
+
+function restart() {
+  player = new Player();
+  zombies = [];
+  zombieSpawnTime = 300;
+  zombieMaxSpeed = 2;
+  score = 0;
 }
