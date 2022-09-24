@@ -31,19 +31,19 @@ class Player {
       let sidewaysSpeed = 0;
       let forwardSpeed = 0;
       if (keyIsDown(65)) {
-        sidewaysSpeed = -2;
+        sidewaysSpeed = -4;
       }
   
       if (keyIsDown(68)) {
-        sidewaysSpeed = 2;
+        sidewaysSpeed = 4;
       }
   
       if (keyIsDown(87)) {
-        forwardSpeed = -2;
+        forwardSpeed = -4;
       }
   
       if (keyIsDown(83)) {
-        forwardSpeed = 2;
+        forwardSpeed = 4;
       }
       
       this.pos.add(sidewaysSpeed, forwardSpeed);

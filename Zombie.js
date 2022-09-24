@@ -29,8 +29,8 @@ class Zombie {
       this.angle = atan2(player.pos.y - this.pos.y, player.pos.x - this.pos.x);
       rotate(this.angle);
       fill(100, 255, 100);
-      image(zombieImg, 0, 0, 30, 30);
-      //rect(0, 0, 20, 20);
+      image(zombieImg, 0, 0, 40, 40);
+      rect(0, 0, 20, 20);
       pop();
     }
     

@@ -6,3 +6,23 @@ html, body {
 canvas {
   display: block;
 }
+
+.main{
+  height: 333px;
+}
+
+.col{
+  height: 500px;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+#col-left{
+  height: max-content;
+}
+
+#col-middle{
+  background-image: url(/map.png);
+  height: max-content;
+  color: white;
+}

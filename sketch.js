@@ -7,12 +7,13 @@ let speed = 2;
 let score = 0;
 
 function setup() {
-  createCanvas(1510, 830);
+  createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
   player = new Player();
   zombieImg = loadImage("zombie.png");
   playerImg = loadImage("player.png");
   grassImg = loadImage("map.png");
+  explosionImg = loadImage("explosion.png")
   zombies.push(new Zombie(random(speed)));
 }
 
@@ -53,7 +54,7 @@ function draw() {
   textAlign(CENTER);
   textSize(40);
   text(score, width/2, 100);
-  fill(255,255,0);
+  fill(73,198,212);
 }
 
 function mouseClicked() {
