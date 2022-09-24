@@ -53,7 +53,7 @@ function draw() {
   }
   textAlign(CENTER);
   textSize(40);
-  text(score, width/2, 100);
+  text(score, width/2, 50);
   fill(73,198,212);
 }
 

@@ -26,3 +26,26 @@ canvas {
   height: max-content;
   color: white;
 }
+
+
+/* space page styling  */
+
+.nav-space{
+  background-color: black;
+  display: flex;
+  color: white;
+  padding: 5px;
+  padding-right: 5%;
+  border: 1px solid blue;
+}
+
+#space-link{
+  border: 1px solid white;
+  width: 200px;
+  text-align: center;
+}
+
+#score-space{
+  margin: 0 auto;
+  margin-left: 48%;
+}
