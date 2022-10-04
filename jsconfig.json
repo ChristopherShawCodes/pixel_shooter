@@ -3,5 +3,5 @@
     "*.js",
     "libraries/*.js",
     "/Users/christopher/.vscode/extensions/samplavigne.p5-vscode-1.2.11/p5types/global.d.ts"
-  ]
+, "space1/Bullet.js", "space1/Player.js", "space1/Bullet.js"  ], ".., "../Zombie.js"/Player.js"
 }

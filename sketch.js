@@ -10,15 +10,15 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   imageMode(CENTER);
   player = new Player();
-  zombieImg = loadImage("zombie.png");
-  playerImg = loadImage("player.png");
-  grassImg = loadImage("map.png");
-  explosionImg = loadImage("explosion.png")
+  zombieImg = loadImage("/images/zombie.png");
+  playerImg = loadImage("/images/player.png");
+  mapImg = loadImage("/images/map.png");
+  explosionImg = loadImage("/images/explosion.png");
   zombies.push(new Zombie(random(speed)));
 }
 
 function draw() {
-  image(grassImg, 0, 0, width*2, height * 2);
+  image(mapImg, 0, 0, width*2, height * 2);
   
   frame++;
   player.draw();
@@ -59,6 +59,8 @@ function draw() {
 
 function mouseClicked() {
   player.shoot();
+
+  // if player.ateYou
 }
 
 function restart() {

@@ -7,24 +7,8 @@ canvas {
   display: block;
 }
 
-.main{
-  height: 333px;
-}
-
-.col{
-  height: 500px;
-  border: 1px solid black;
-  margin-top: 5px;
-}
-
-#col-left{
-  height: max-content;
-}
-
-#col-middle{
-  background-image: url(/map.png);
-  height: max-content;
-  color: white;
+#main-background{
+  background-image: url('')
 }
 
 
@@ -45,7 +29,14 @@ canvas {
   text-align: center;
 }
 
+#space-link:hover{
+  border: 1 px solid white;
+  width: 200px;
+  text-align: center;
+  color:aqua;
+}
+
 #score-space{
   margin: 0 auto;
-  margin-left: 48%;
+  margin-left: 45%;
 }
